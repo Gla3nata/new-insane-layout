@@ -1,0 +1,1 @@
+(()=>{"use strict";(()=>{const e=document.querySelector(".header-contacts__arrow"),c=document.querySelector(".header-contacts__phone-number-accord");e&&c&&e.addEventListener("click",()=>{c.classList.toggle("header-contacts__phone-number-accord--active"),e.classList.toggle("header-contacts__arrow--active")})})(),console.log("modal")})();
