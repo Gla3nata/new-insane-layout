@@ -4716,6 +4716,9 @@ div.wave-block:nth-child(17):after {
     color: #322823;
     z-index: 9999;
 }
+.popup--active {
+    visibility: visible;
+}
 
 @media (max-width: 575px) {
     .popup {
@@ -4812,6 +4815,9 @@ div.wave-block:nth-child(17):after {
     -webkit-transition: 1s;
     transition: 1s;
 }
+.popup--active .popup-dialog-menu {
+    transform: translate3d(0, 0, 0);
+}
 
 @media (max-width: 1024px) {
     .popup-dialog-menu {
@@ -4832,6 +4838,9 @@ div.wave-block:nth-child(17):after {
         -webkit-transform: translate3d(0, -100vh, 0);
         transform: translate3d(0, -100vh, 0);
         left: -5%;
+    }
+     .popup--active .popup-dialog-menu {
+        transform: translate3d(0, 0, 0);
     }
 }
 
