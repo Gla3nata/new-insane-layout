@@ -7,6 +7,9 @@ const smoothScroll = () => {
     links.forEach(link => {
         link.addEventListener('click', event => {
             const targetId = link.getAttribute('href');
+            
+            if (!targetId || targetId === '#') return;
+
             const targetElement = document.querySelector(targetId);
 
             if (popupMenu && popupMenu.classList.contains('popup--active')) {
