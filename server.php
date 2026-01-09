@@ -1,3 +1,7 @@
 <?php
-// Пустой файл - просто чтобы был
-?>
+$data = json_decode(file_get_contents('php://input'), true);
+
+echo json_encode([
+    'status' => 'success',
+    'received' => $data
+]);

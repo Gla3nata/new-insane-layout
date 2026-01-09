@@ -26,4 +26,13 @@ sendForm({
 sendForm({
     formId: 'feedback3'
 });
+sendForm({
+    formId: 'feedback4'
+});
+sendForm({
+    formId: 'feedback5'
+});
+sendForm({
+    formId: 'feedback6'
+});
 modal()
