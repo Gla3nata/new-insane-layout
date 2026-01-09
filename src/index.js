@@ -6,7 +6,7 @@ import smoothScroll from './modules/smoothScroll.js';
 import repairPopup from './modules/repairPopup.js';
 import faq from './modules/faq.js';
 import phoneMask from './modules/phoneMask.js';
-import forms from './modules/forms.js';
+import sendForm from './modules/sendForm.js';
 
 
 
@@ -16,5 +16,14 @@ menuPopup()
 smoothScroll()
 faq()
 phoneMask()
-forms()
+sendForm({
+    formId: 'feedback1', 
+    });
+sendForm({
+    formId: 'feedback2'
+});
+
+sendForm({
+    formId: 'feedback3'
+});
 modal()
