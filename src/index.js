@@ -1,5 +1,5 @@
 
-import modal from './modules/modal.js';
+import modalController from './modules/modalController';
 import phoneToggle from './modules/phoneToggle.js';
 import smoothScroll from './modules/smoothScroll.js';
 import repairPopup from './modules/repairPopup.js';
@@ -33,4 +33,3 @@ sendForm({
 sendForm({
     formId: 'feedback6'
 });
-modal()

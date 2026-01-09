@@ -1,5 +1,11 @@
+import modalController from './modalController';
+
+console.log(modalController);
+
 const sendForm = ({ formId }) => {
     const form = document.getElementById(formId);
+    
+    
     if (!form) return;
 
     form.addEventListener('submit', async (e) => {
@@ -8,7 +14,6 @@ const sendForm = ({ formId }) => {
         const checkbox = form.querySelector('input[type="checkbox"]');
         if (checkbox) {
             if (checkbox.hasAttribute('required') && !checkbox.checked) {
-                highlightCheckboxError(checkbox);
                 alert('Необходимо согласие с условиями!');
                 return;
             }
@@ -30,13 +35,17 @@ const sendForm = ({ formId }) => {
                 body: JSON.stringify(data)
             });
 
-            alert('Форма отправлена!');
+            modalController.openModal('.popup-thank');
+            console.log('modalController');
+            
             form.reset();
 
         } catch {
             alert('Ошибка отправки формы');
         }
     });
+
+   
 };
 
 export default sendForm;
