@@ -7,7 +7,7 @@ import modalController from './modules/modalController.js';
 import sendForm from './modules/sendForm.js';
 import tooltip from './modules/tooltip.js';
 import formulaSlider from './modules/formulaSlider.js';
-
+import repairTypes from './modules/repairTypes.js';
 
 repairPopup()
 phoneToggle()
@@ -15,7 +15,8 @@ smoothScroll()
 faq()
 phoneMask()
 tooltip()
-formulaSlider();
+formulaSlider()
+repairTypes()
 
 sendForm({
     formId: 'feedback1', 
