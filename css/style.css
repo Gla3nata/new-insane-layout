@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 @font-face {
     font-family: "Noto Sans";
     src: url("../fonts/NotoSans-Regular.ttf") format("truetype");
@@ -48,11 +49,14 @@ abbr[title] {
     text-decoration: underline dotted;
 }
 
-b, strong {
+b,
+strong {
     font-weight: bolder;
 }
 
-code, kbd, samp {
+code,
+kbd,
+samp {
     font-family: monospace, monospace;
     font-size: 1em;
 }
@@ -61,7 +65,8 @@ small {
     font-size: 80%;
 }
 
-sub, sup {
+sub,
+sup {
     font-size: 75%;
     line-height: 0;
     position: relative;
@@ -80,31 +85,46 @@ img {
     border-style: none;
 }
 
-button, input, optgroup, select, textarea {
+button,
+input,
+optgroup,
+select,
+textarea {
     font-family: inherit;
     font-size: 100%;
     line-height: 1.15;
     margin: 0;
 }
 
-button, input {
+button,
+input {
     overflow: visible;
 }
 
-button, select {
+button,
+select {
     text-transform: none;
 }
 
-button, [type="button"], [type="reset"], [type="submit"] {
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
     -webkit-appearance: button;
 }
 
-button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
     border-style: none;
     padding: 0;
 }
 
-button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring {
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
     outline: 1px dotted ButtonText;
 }
 
@@ -130,13 +150,15 @@ textarea {
     overflow: auto;
 }
 
-[type="checkbox"], [type="radio"] {
+[type="checkbox"],
+[type="radio"] {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0;
 }
 
-[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
     height: auto;
 }
 
@@ -162,7 +184,8 @@ summary {
     display: list-item;
 }
 
-template, [hidden] {
+template,
+[hidden] {
     display: none;
 }
 
@@ -526,6 +549,7 @@ template, [hidden] {
     justify-content: space-between;
     margin-top: 80px;
 }
+
 .header-contacts__phone-number-accord--active {
     top: 30px;
 }
@@ -533,6 +557,7 @@ template, [hidden] {
 .header-contacts__phone-number-accord--active a {
     opacity: 1;
 }
+
 .header-contacts__arrow--active img {
     transform: rotate(180deg);
 }
@@ -936,27 +961,27 @@ template, [hidden] {
 }
 
 @media (min-width: 1025px) {
-    .services > div:nth-child(2) > div:nth-child(1) {
+    .services>div:nth-child(2)>div:nth-child(1) {
         padding-left: 130px;
         margin-top: 10px;
     }
 
-    .services > div:nth-child(2) > div:nth-child(2) {
+    .services>div:nth-child(2)>div:nth-child(2) {
         padding-left: 68px;
         margin-top: 25px;
     }
 
-    .services > div:nth-child(3) > div:nth-child(1) {
+    .services>div:nth-child(3)>div:nth-child(1) {
         padding-left: 85px;
         margin-top: 25px;
     }
 
-    .services > div:nth-child(3) > div:nth-child(2) {
+    .services>div:nth-child(3)>div:nth-child(2) {
         padding-left: 155px;
         margin-top: 25px;
     }
 
-    .services > div:nth-child(3) > div:nth-child(2) > div.services-item__img > svg path {
+    .services>div:nth-child(3)>div:nth-child(2)>div.services-item__img>svg path {
         fill: #937E6C;
     }
 }
@@ -1168,7 +1193,16 @@ template, [hidden] {
         width: 290px;
         margin-left: auto;
         margin-right: auto;
+        overflow: hidden;
     }
+
+    .formula-slider {
+        display: flex;
+        transition: transform 0.4s;
+        max-width: 20px;
+        width: 100%;
+    }
+
 }
 
 .formula .row {
@@ -4486,7 +4520,7 @@ div.wave-block:nth-child(17):after {
     }
 }
 
-.msg-active ~ .msg {
+.msg-active~.msg {
     position: relative;
     overflow: hidden;
     max-height: 100%;
@@ -4498,11 +4532,11 @@ div.wave-block:nth-child(17):after {
 }
 
 @media (max-width: 575px) {
-    .msg-active ~ .msg {
+    .msg-active~.msg {
         max-height: 300px;
     }
 
-    .msg-active ~ .msg ~ .accordion-more {
+    .msg-active~.msg~.accordion-more {
         display: block;
     }
 }
@@ -4716,6 +4750,7 @@ div.wave-block:nth-child(17):after {
     color: #322823;
     z-index: 9999;
 }
+
 .popup--active {
     visibility: visible;
 }
@@ -4815,6 +4850,7 @@ div.wave-block:nth-child(17):after {
     -webkit-transition: 1s;
     transition: 1s;
 }
+
 .popup--active .popup-dialog-menu {
     transform: translate3d(0, 0, 0);
 }
@@ -4839,7 +4875,8 @@ div.wave-block:nth-child(17):after {
         transform: translate3d(0, -100vh, 0);
         left: -5%;
     }
-     .popup--active .popup-dialog-menu {
+
+    .popup--active .popup-dialog-menu {
         transform: translate3d(0, 0, 0);
     }
 }
@@ -7912,7 +7949,7 @@ div.wave-block:nth-child(17):after {
     visibility: hidden;
 }
 
-.checkbox input[type="checkbox"]:checked + label:after {
+.checkbox input[type="checkbox"]:checked+label:after {
     opacity: 1;
 }
 
@@ -8206,7 +8243,9 @@ div.wave-block:nth-child(17):after {
 }
 
 @media (max-width: 575px) {
-    #repair-types-arrow_left, #repair-types-arrow_right {
+
+    #repair-types-arrow_left,
+    #repair-types-arrow_right {
         top: 41%;
     }
 }
@@ -8322,7 +8361,9 @@ div.wave-block:nth-child(17):after {
 }
 
 @media (min-width: 1091px) {
-    #transparency-arrow_left, #transparency-arrow_right {
+
+    #transparency-arrow_left,
+    #transparency-arrow_right {
         display: none;
     }
 }
@@ -8383,7 +8424,8 @@ div.wave-block:nth-child(17):after {
     padding: 0;
 }
 
-body, html {
+body,
+html {
     min-height: 100%;
 }
 
@@ -8797,12 +8839,15 @@ strong {
     0% {
         opacity: 0;
     }
+
     5% {
         opacity: 1;
     }
+
     97% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
     }
@@ -8812,12 +8857,15 @@ strong {
     0% {
         opacity: 0;
     }
+
     5% {
         opacity: 1;
     }
+
     97% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
     }
@@ -8827,6 +8875,7 @@ strong {
     0% {
         opacity: 0.3;
     }
+
     100% {
         opacity: 1;
     }
@@ -8836,6 +8885,7 @@ strong {
     0% {
         opacity: 0.3;
     }
+
     100% {
         opacity: 1;
     }
@@ -8846,14 +8896,17 @@ strong {
         -webkit-transform: translateX(640px);
         transform: translateX(640px);
     }
+
     10% {
         -webkit-transform: translateX(600px);
         transform: translateX(600px);
     }
+
     15% {
         -webkit-transform: translateX(540px);
         transform: translateX(540px);
     }
+
     100% {
         -webkit-transform: translateX(0);
         transform: translateX(0);
@@ -8865,14 +8918,17 @@ strong {
         -webkit-transform: translateX(640px);
         transform: translateX(640px);
     }
+
     10% {
         -webkit-transform: translateX(600px);
         transform: translateX(600px);
     }
+
     15% {
         -webkit-transform: translateX(540px);
         transform: translateX(540px);
     }
+
     100% {
         -webkit-transform: translateX(0);
         transform: translateX(0);
@@ -8884,10 +8940,12 @@ strong {
         -webkit-transform: translateX(0);
         transform: translateX(0);
     }
+
     10% {
         -webkit-transform: translateX(540px);
         transform: translateX(540px);
     }
+
     100% {
         -webkit-transform: translateX(640px);
         transform: translateX(640px);
@@ -8899,10 +8957,12 @@ strong {
         -webkit-transform: translateX(0);
         transform: translateX(0);
     }
+
     10% {
         -webkit-transform: translateX(540px);
         transform: translateX(540px);
     }
+
     100% {
         -webkit-transform: translateX(640px);
         transform: translateX(640px);
@@ -8953,7 +9013,7 @@ strong {
     max-height: 100% !important;
 }
 
-.accordion-more-active ~ .accordion-more svg {
+.accordion-more-active~.accordion-more svg {
     -webkit-transform: scale(1, -1);
     transform: scale(1, -1);
 }

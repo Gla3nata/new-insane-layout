@@ -1,12 +1,12 @@
-
-import modalController from './modules/modalController';
 import phoneToggle from './modules/phoneToggle.js';
 import smoothScroll from './modules/smoothScroll.js';
 import repairPopup from './modules/repairPopup.js';
 import faq from './modules/faq.js';
 import phoneMask from './modules/phoneMask.js';
+import modalController from './modules/modalController.js';
 import sendForm from './modules/sendForm.js';
-import tooltip from './modules/tooltip';
+import tooltip from './modules/tooltip.js';
+import formulaSlider from './modules/formulaSlider.js';
 
 
 repairPopup()
@@ -15,6 +15,8 @@ smoothScroll()
 faq()
 phoneMask()
 tooltip()
+formulaSlider();
+
 sendForm({
     formId: 'feedback1', 
     });
