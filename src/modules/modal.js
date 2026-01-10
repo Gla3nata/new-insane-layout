@@ -1,20 +1,17 @@
 const modal = () => {
-    const body = document.body;
     const modals = document.querySelectorAll('.popup');
-
+    
     const openModal = (selector) => {
         modals.forEach(popup => popup.classList.remove('popup--active'));
 
         const modal = document.querySelector(selector);
         if (modal) {
             modal.classList.add('popup--active');
-            body.style.overflow = 'hidden';
         }
     };
 
     const closeModal = () => {
         modals.forEach(popup => popup.classList.remove('popup--active'));
-        body.style.overflow = '';
     };
 
     document.addEventListener('click', (e) => {
@@ -26,9 +23,10 @@ const modal = () => {
         }
 
         // zoom (портфолио)
-        if (target.closest('.item-hover img')) {
+        if (target.closest('.portfolio-slider__slide-frame')) {
             openModal('.popup-portfolio');
         }
+
 
         // договор
         if (target.closest('.transparency-item')) {
