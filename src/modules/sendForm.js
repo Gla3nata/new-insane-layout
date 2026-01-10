@@ -1,11 +1,10 @@
 import modalController from './modalController';
 
-console.log(modalController);
-
 const sendForm = ({ formId }) => {
     const form = document.getElementById(formId);
     
-    
+    // form.setAttribute('novalidate', 'novalidate');
+
     if (!form) return;
 
     form.addEventListener('submit', async (e) => {
