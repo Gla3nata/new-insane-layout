@@ -1,22 +1,52 @@
 const modal = () => {
+    const body = document.body;
     const modals = document.querySelectorAll('.popup');
 
     const openModal = (selector) => {
         modals.forEach(popup => popup.classList.remove('popup--active'));
-        const current = document.querySelector(selector);
-        if (current) {
-            current.classList.add('popup--active');
-            document.body.style.overflow = 'hidden';
+
+        const modal = document.querySelector(selector);
+        if (modal) {
+            modal.classList.add('popup--active');
+            body.style.overflow = 'hidden';
         }
     };
 
     const closeModal = () => {
         modals.forEach(popup => popup.classList.remove('popup--active'));
-        document.body.style.overflow = '';
+        body.style.overflow = '';
     };
 
     document.addEventListener('click', (e) => {
-        if (e.target.classList.contains('popup') || e.target.closest('.close')) {
+        const target = e.target;
+
+        // меню
+        if (target.closest('.menu__icon') || target.closest('.menu__title')) {
+            openModal('.popup-menu');
+        }
+
+        // zoom (портфолио)
+        if (target.closest('.item-hover img')) {
+            openModal('.popup-portfolio');
+        }
+
+        // договор
+        if (target.closest('.transparency-item')) {
+            openModal('.popup-transparency');
+        }
+
+        // консультация
+        if (target.closest('.button_wide')) {
+            openModal('.popup-consultation');
+        }
+
+        // политика
+        if (target.closest('.link-privacy')) {
+            openModal('.popup-privacy');
+        }
+
+        // закрытие
+        if (target.closest('.close') || target.classList.contains('popup')) {
             closeModal();
         }
     });

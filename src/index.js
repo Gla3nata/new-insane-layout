@@ -6,14 +6,15 @@ import repairPopup from './modules/repairPopup.js';
 import faq from './modules/faq.js';
 import phoneMask from './modules/phoneMask.js';
 import sendForm from './modules/sendForm.js';
-
-
+import tooltip from './modules/tooltip';
 
 repairPopup()
 phoneToggle()
 smoothScroll()
 faq()
 phoneMask()
+
+tooltip()
 sendForm({
     formId: 'feedback1', 
     });

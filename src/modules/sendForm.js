@@ -1,4 +1,6 @@
-import modalController from './modalController';
+import modal from './modal';
+
+const modalController = modal();
 
 const sendForm = ({ formId }) => {
     const form = document.getElementById(formId);
