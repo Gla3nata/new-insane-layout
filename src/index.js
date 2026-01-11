@@ -8,6 +8,9 @@ import sendForm from './modules/sendForm.js';
 import tooltip from './modules/tooltip.js';
 import formulaSlider from './modules/formulaSlider.js';
 import repairTypes from './modules/repairTypes.js';
+import portfolioSlider from './modules/portfolioSlider.js';
+
+
 
 repairPopup()
 phoneToggle()
@@ -17,6 +20,7 @@ phoneMask()
 tooltip()
 formulaSlider()
 repairTypes()
+portfolioSlider()
 
 sendForm({
     formId: 'feedback1', 
