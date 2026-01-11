@@ -9,6 +9,7 @@ import tooltip from './modules/tooltip.js';
 import formulaSlider from './modules/formulaSlider.js';
 import repairTypes from './modules/repairTypes.js';
 import portfolioSlider from './modules/portfolioSlider.js';
+import transparencySlider from './modules/transparencySlider.js';
 
 
 repairPopup()
@@ -20,6 +21,7 @@ tooltip()
 formulaSlider()
 repairTypes()
 portfolioSlider()
+transparencySlider()
 sendForm({
     formId: 'feedback1', 
     });

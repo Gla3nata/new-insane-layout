@@ -2569,7 +2569,17 @@ div.wave-block:nth-child(17):after {
     .transparency-item {
         margin-left: auto;
         margin-right: auto;
+        text-align: center;
     }
+    .transparency-item__img{
+         margin-left: auto;
+        margin-right: auto;
+    }
+    .transparency-item__descr{
+margin-left: auto;
+        margin-right: auto;
+    }
+
 }
 
 @media (max-width: 1024px) {
