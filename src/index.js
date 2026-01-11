@@ -11,7 +11,6 @@ import repairTypes from './modules/repairTypes.js';
 import portfolioSlider from './modules/portfolioSlider.js';
 import transparencySlider from './modules/transparencySlider.js';
 
-
 repairPopup()
 phoneToggle()
 smoothScroll()

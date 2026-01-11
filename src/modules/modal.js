@@ -1,4 +1,5 @@
 import popupPortfolioSlider from './popupPortfolioSlider';
+import popupTransparencySlider from './popupTransparencySlider';
 
 const modal = () => {
     const modals = document.querySelectorAll('.popup');
@@ -34,6 +35,7 @@ const modal = () => {
         // договор
         if (target.closest('.transparency-item')) {
             openModal('.popup-transparency');
+            popupTransparencySlider()
         }
 
         // консультация
