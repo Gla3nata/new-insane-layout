@@ -1,3 +1,5 @@
+import popupPortfolioSlider from './popupPortfolioSlider';
+
 const modal = () => {
     const modals = document.querySelectorAll('.popup');
     
@@ -25,6 +27,7 @@ const modal = () => {
         // zoom (портфолио)
         if (target.closest('.portfolio-slider__slide-frame')) {
             openModal('.popup-portfolio');
+            popupPortfolioSlider();
         }
 
 

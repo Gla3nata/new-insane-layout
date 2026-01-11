@@ -11,7 +11,6 @@ import repairTypes from './modules/repairTypes.js';
 import portfolioSlider from './modules/portfolioSlider.js';
 
 
-
 repairPopup()
 phoneToggle()
 smoothScroll()
@@ -21,7 +20,6 @@ tooltip()
 formulaSlider()
 repairTypes()
 portfolioSlider()
-
 sendForm({
     formId: 'feedback1', 
     });
