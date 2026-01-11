@@ -1,6 +1,8 @@
 const tooltip = () => {
     const formulaItems = document.querySelectorAll('.formula-item');
 
+    const isDesktop = () => window.innerWidth >= 1024;
+
     if (!formulaItems.length) return;
     formulaItems.forEach(item => {
         const tooltip = item.querySelector('.formula-item-popup');
@@ -8,6 +10,8 @@ const tooltip = () => {
         if (!tooltip) return;
 
         item.addEventListener('mouseenter', (event) => {
+            if (!isDesktop()) return;
+
             tooltip.style.visibility = 'visible';
             tooltip.style.opacity = '1';
 
@@ -15,6 +19,8 @@ const tooltip = () => {
         });
         // при уходе мышки
         item.addEventListener('mouseleave', () => {
+            if (!isDesktop()) return;
+            
             tooltip.style.visibility = 'hidden';
             tooltip.style.opacity = '0';
             tooltip.style.top = '';
