@@ -4779,7 +4779,9 @@ div.wave-block:nth-child(17):after {
 .popup--active {
     visibility: visible;
 }
-
+.popup--active .popup-portfolio-text {
+    display: block;
+}
 @media (max-width: 575px) {
     .popup {
         padding-left: 0;

@@ -7,18 +7,7 @@ const formulaSlider = () => {
     let currentIndex = 0;
 
     const isMobile = () => window.innerWidth < 1024;
-    // const moveSlider = () => {
-    //     const slideWidth = items[0].offsetWidth;
-    //     const wrap = slider.parentElement;
-    //     const wrapWidth = wrap.offsetWidth;
 
-    //     const offset =
-    //         currentIndex * slideWidth -
-    //         wrapWidth / 2 +
-    //         slideWidth / 2;
-
-    //     slider.style.transform = `translateX(-${offset}px)`;
-    // };
     const updateSlides = () => {
         if (!isMobile()) return;
 
