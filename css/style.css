@@ -1576,6 +1576,13 @@ template,
     }
 }
 
+.formula-item-popup.formula-item-popup--bottom:before {
+    transform: rotate(180deg);
+}
+.formula-item{
+   z-index: 1;
+}
+
 .repair-types {
     position: relative;
     padding: 100px 0;

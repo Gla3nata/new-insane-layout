@@ -9,7 +9,7 @@ const tooltip = () => {
 
         if (!tooltip) return;
 
-        item.addEventListener('mouseenter', (event) => {
+        item.addEventListener('mouseenter', () => {
             if (!isDesktop()) return;
 
             tooltip.style.visibility = 'visible';
@@ -20,7 +20,7 @@ const tooltip = () => {
         // при уходе мышки
         item.addEventListener('mouseleave', () => {
             if (!isDesktop()) return;
-            
+
             tooltip.style.visibility = 'hidden';
             tooltip.style.opacity = '0';
             tooltip.style.top = '';
@@ -35,9 +35,11 @@ const tooltip = () => {
         if (tooltipRect.top < 0) {
             tooltip.style.top = '100%';
             tooltip.style.bottom = 'auto';
+            tooltip.classList.add('formula-item-popup--bottom');
         } else {
             tooltip.style.bottom = '100%';
             tooltip.style.top = 'auto';
+            tooltip.classList.remove('formula-item-popup--bottom');
         }
     }
 };
