@@ -1,26 +1,27 @@
 import phoneToggle from './modules/phoneToggle.js';
 import smoothScroll from './modules/smoothScroll.js';
-import repairPopup from './modules/repairPopup.js';
 import faq from './modules/faq.js';
 import phoneMask from './modules/phoneMask.js';
 import modalController from './modules/modalController.js';
 import sendForm from './modules/sendForm.js';
 import tooltip from './modules/tooltip.js';
-import formulaSlider from './modules/formulaSlider.js';
 import repairTypes from './modules/repairTypes.js';
+import formulaSlider from './modules/formulaSlider.js';
 import portfolioSlider from './modules/portfolioSlider.js';
 import transparencySlider from './modules/transparencySlider.js';
+import reviewsSlider from './modules/reviewsSlider'
 
-repairPopup()
+
 phoneToggle()
 smoothScroll()
 faq()
 phoneMask()
 tooltip()
-formulaSlider()
 repairTypes()
+formulaSlider()
 portfolioSlider()
 transparencySlider()
+reviewsSlider();
 sendForm({
     formId: 'feedback1', 
     });
