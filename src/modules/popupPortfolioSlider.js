@@ -1,13 +1,20 @@
 const popupPortfolioSlider = () => {
-    const slider = document.querySelector('.popup-portfolio-slider');
+    const popup = document.querySelector('.popup-portfolio');
+    if (!popup) return;
+
+    const slider = popup.querySelector('.popup-portfolio-slider');
     if (!slider) return;
 
     const slides = slider.querySelectorAll('.popup-portfolio-slider__slide');
-    const prev = document.getElementById('popup_portfolio_left');
-    const next = document.getElementById('popup_portfolio_right');
+    const prev = popup.querySelector('#popup_portfolio_left');
+    const next = popup.querySelector('#popup_portfolio_right');
 
-    const current = document.querySelector('#popup-portfolio-counter .slider-counter-content__current');
-    const total = document.querySelector('#popup-portfolio-counter .slider-counter-content__total');
+    const current = popup.querySelector(
+        '#popup-portfolio-counter .slider-counter-content__current'
+    );
+    const total = popup.querySelector(
+        '#popup-portfolio-counter .slider-counter-content__total'
+    );
 
     let currentIndex = 0;
 
@@ -20,7 +27,6 @@ const popupPortfolioSlider = () => {
 
         current.textContent = index + 1;
 
-        // скрываем стрелки по краям
         prev.style.display = index === 0 ? 'none' : 'block';
         next.style.display = index === slides.length - 1 ? 'none' : 'block';
     };
