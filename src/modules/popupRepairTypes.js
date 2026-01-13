@@ -6,7 +6,7 @@ const popupRepairTypes = () => {
 
     const isMobile = () => window.innerWidth < 1024;
 
-    fetch('../db/db.json')
+    fetch('http://localhost:4545/services')
         .then(res => res.json())
         .then(data => {
 
