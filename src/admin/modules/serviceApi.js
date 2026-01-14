@@ -3,7 +3,12 @@ export class ServiceApi {
     return fetch('http://localhost:4545/services')
       .then(res => res.json());
   }
- 
+
+  getById(id) {
+    return fetch(`http://localhost:4545/services/${id}`)
+      .then(res => res.json());
+  }
+
   addService(service) {
     return fetch('http://localhost:4545/services', {
       method: 'POST',
@@ -11,6 +16,14 @@ export class ServiceApi {
       body: JSON.stringify(service)
     }).then(res => res.json());
   }
+  
+  updateService(id, service) {
+    return fetch(`http://localhost:4545/services/${id}`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(service)
+    }).then(res => res.json());
+  } 
 
   removeService(id) {
     return fetch(`http://localhost:4545/services/${id}`, {
