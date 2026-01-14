@@ -1,5 +1,3 @@
-import adminTable from '../admin/admin-table';
-
 const auth = () => {
     const form = document.querySelector('form');
     const loginInput = document.getElementById('name');
@@ -25,9 +23,6 @@ const auth = () => {
 
         if (isAuth && isLoginPage) {
             window.location.href = 'table.html';
-        }
-         if (isAuth && isTablePage) {
-            adminTable();
         }
     };
 
