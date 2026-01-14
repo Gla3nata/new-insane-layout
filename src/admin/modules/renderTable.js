@@ -1,12 +1,12 @@
 export const renderTable = (services) => {
-    const tBody = document.getElementById('table');
+    const tBody = document.getElementById('tbody');
  if (!tBody) return;
 
     tBody.innerHTML = '';
 
     services.forEach(service => {
         tBody.insertAdjacentHTML('beforeend', `
-			<tr class="table__row">
+			<tr data-key="${service.id}" class="table__row">
                         <td class="table__id table__cell">${service.id}</td>
 						<td class="table-type table__cell">${service.type}</td>
 						<td class="table-name table__cell">${service.name}</td>
